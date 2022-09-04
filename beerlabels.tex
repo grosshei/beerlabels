@@ -4,32 +4,48 @@
 \documentclass[12pt]{letter}
 
 \usepackage{envlab}
-\makelabels
+
 
 % \SetLabel{W}{H}{t}{l}{r}{Nc}{Nr}
 
+%old left-align printer
 %3x5 (remove additional margin below; change total labels from 24 to 15)
 %\SetLabel{19.0mm}{20.5mm}{0.1mm}{0.1mm}{0.1mm}{3}{5}
 
-%4x7 (with additional margin to skip the first unusable row)
-\SetLabel{19.5mm}{21.0mm}{-0.4mm}{0.1mm}{1.0mm}{4}{6}
+%4x7 (with additional margin to skip the first unusable row) center align
+%\SetLabel{19.5mm}{21.0mm}{-0.4mm}{62mm}{1.0mm}{4}{6}
+
+%Avery 5408 with center align printer
+\SetLabel{21.0mm}{20.0mm}{-9.0mm}{62.0mm}{3.0mm}{4}{6}
+
+
+%skip used labels
+\FirstLabel{1}{1}
+
+
+\makelabels
 
 
 \begin{document}
 \printreturnlabels{24}{
 \tiny \center 
 
-% Chinook\\IPA\\2014APR19
-% Lemon\\Cooler\\2014APR19
-% Tongue\\Splitter\\Pale Ale\\2014MAR07
-% Apfelwein\\Cider\\2014FEB
-% Ancient\\Stout\\2014JAN
-% Cinco de\\Quatro\\IPA\\2014JUN08
-% Plinian\\Legacy\\Double IPA\\2014JUN8
-% Honey\\K\"{o}lsch\\2014JUN29
-% Strip\`{e}d\\Moo Moo\\Cream Ale\\2014JUN29
-Citra\\Chameleon\\Pale Ale\\2014JUL09
-% Golden\\Child\\Blonde Ale\\2014JUL09
+%Chinook\\IPA\\2014APR19
+%Lemon\\Cooler\\2014APR19
+%Tongue\\Splitter\\Pale Ale\\2014MAR07
+%Apfelwein\\Cider\\2014FEB
+%Ancient\\Stout\\2014JAN
+%Cinco de\\Quatro\\IPA\\2014JUN08
+%Plinian\\Legacy\\Double IPA\\2014JUN8
+%Honey\\K\"{o}lsch\\2014JUN29
+%Strip\`{e}d\\Moo Moo\\Cream Ale\\2014JUN29
+%Citra\\Chameleon\\Pale Ale\\2014JUL09
+%Golden\\Child\\Blonde Ale\\2014JUL09
+%Ros\'{e}\\wine\\2020
+%Wine\\Cooler\\2020
+%2018?\\Rice\\Wine\\Grade A
+%2016\\Lemon\\Cooler 3\\btld 2020
+Raspberry\\Jam\\2022
 
 
 }
